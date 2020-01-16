@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.example.demo.dao.ProductIdDao">
+    <resultMap id="product_id" type="com.example.demo.entity.ProductId">
+
+        <result property="uuid" column="uuid" />
+        <result property="productBody" column="product_body" />
+        <result property="productId" column="product_id" />
+        <result property="referenceId" column="reference_id" />
+        <result property="customerCode" column="customer_code" />
+        <result property="nickName" column="nick_name" />
+        <result property="fsrNo" column="fsr_no" />
+        <result property="endCode" column="end_code" />
+        <result property="ceRegion" column="ce_region" />
+        <result property="salesRegion" column="sales_region" />
+        <result property="customerName" column="customer_name" />
+        <result property="characterization" column="characterization" />
+        <result property="market" column="market" />
+        <result property="application" column="application" />
+        <result property="productSegment" column="product_segment" />
+        <result property="dieSize" column="die_size" />
+        <result property="finalNtoSite" column="final_nto_site" />
+        <result property="technologyId" column="technology_id" />
+        <result property="fabName" column="fab_name" />
+        <result property="lincense" column="lincense" />
+        <result property="processRequirement" column="process_requirement" />
+        <result property="cusDeviceId" column="customer_device_id" />
+        <result property="chipSize" column="chip_size" />
+        <result property="finaNtoFab" column="final_nto_fab" />
+        <result property="actualTech" column="actual_technology" />
+        <result property="refTech" column="ref_technology" />
+        <result property="shipCode" column="ship_code" />
+        <result property="optionalInfo" column="optional_information" />
+        <result property="maskInfo" column="mask_informantion" />
+        <result property="bgbmLand" column="bgbm_land" />
+        <result property="epi" column="sub_info" />
+        <result property="epiCode" column="epi_code" />
+        <result property="epiDes" column="epi_des" />
+
+        <result property="dieSizeWid" column="die_size_width" />
+        <result property="chipSizeWid" column="chip_size_width" />
+        <result property="createDate" column="create_date" />
+        <result property="delFlag" column="del_flag" />
+        <result property="creater" column="creater" />
+        <result property="remark" column="remark" />
+        <result property="cusProName" column="customer_pro_name" />
+        <result property="cusProVer" column="customer_pro_version" />
+        <result property="cusTechName" column="customer_tech_name" />
+        <result property="assVenName" column="ass_vender_name" />
+        <result property="assVenVer" column="ass_vender_ver" />
+
+        <result property="requestId" column="request_id" />
+        <result property="status" column="status" />
+        <result property="createrId" column="creater_id" />
+        <result property="idType" column="id_type" />
+        <result property="effectiveDate" column="effective_date" />
+        <result property="grossDie" column="gross_die" />
+
+        <result property="actualTechL" column="actual_tech_l" />
+        <result property="actualTechP" column="actual_tech_p" />
+        <result property="actualTechM" column="actual_tech_m" />
+        <result property="actualTechC" column="actual_tech_c" />
+
+        <result property="zProdCatog" column="z_prod_catog" />
+        <result property="zPlatForm" column="z_plat_form" />
+        <result property="zSubPlatForm" column="z_sub_plat_form" />
+
+        <result property="applicant" column="applicant" />
+        <result property="prodOwnerId" column="prod_owner_id" />
+        <result property="motherProdIdUuid" column="mother_prod_id_uuid" />
+        <result property="bodyUuid" column="body_uuid" />
+        <result property="cpTestingType" column="cp_testing_type" />
+    </resultMap>
+    <select id="findProductIdById" resultMap="product_id" parameterType="java.lang.String">
+        select *
+        from CERP_EPIDB_REQUEST_ID
+         where product_id=#{productId}
+    </select>
+</mapper>
