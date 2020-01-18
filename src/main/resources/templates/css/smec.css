@@ -1,0 +1,164 @@
+@charset "UTF-8";
+body {
+    cursor: default;
+}
+.container {
+    max-width: 100%;
+}
+.navbar {
+    border-radius: 0;
+}
+.navbar li.nav-item.active {
+    background:#fff;
+    border-radius:4px;
+}
+.navbar li.nav-item.active>.nav-link {
+    color:#245AB0
+}
+.dropdown-toggle, .d-sm-inline-block {
+    font-weight: bold;
+    font-size: large;
+}
+table thead tr {
+    border-width: 0 0 1px;
+    overflow: hidden;
+    background-color: #d2d2d2;
+}
+table thead tr th, table tbody tr td {
+    vertical-align: middle!important;
+}
+.btn-w-180 {
+    width: 180px;
+}
+.form-control-sm {
+    height: calc(1.8125rem + 2px) !important;
+    padding: .25rem .5rem !important;
+    font-size: .875rem !important;
+    line-height: 1.5 !important;
+    border-radius: .2rem !important;
+}
+.bg-primary {
+    background-color: #245AB0 !important;
+}
+
+.btn-primary {
+    background-color: #245AB0 !important;
+}
+
+.text-gray {
+    color: #999
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    line-height:1.5!important;
+    font-size:12px;
+}
+
+label.control-label {
+    font-size: 14px;
+    text-align: right;
+}
+
+.control-sidebar {
+    left: -250px;
+}
+
+.control-sidebar-open .control-sidebar, .control-sidebar-open .control-sidebar::before {
+    left: 0;
+}
+
+.control-sidebar {
+    position: fixed;
+    margin-top: 57px;
+}
+
+.input-group-prepend {
+    padding-right: 0px !important;
+}
+
+.input-group-prepend .input-group-text {
+    width: 100%;
+    text-align: right;
+    display: inline;
+}
+
+.input-group-prepend .control-label {
+    font-size: 14px;
+}
+
+.text-space {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 89%;
+}
+
+.nav-link.active {
+    font-weight: bold;
+}
+
+.main-header .nav-link {
+    padding: 5px !important;
+    height: auto;
+}
+
+.card-header {
+    padding: 5px 10px;
+    background-color: #245AB0;
+    color: white;
+}
+
+.card-header .card-tools {
+    margin-right: 15px;
+}
+
+.card-header .card-tools i {
+    color: #000;
+}
+
+.card-body {
+    padding: 10px;
+}
+
+.form-group {
+    margin-bottom: 10px !important;
+}
+
+.form-group > label,
+.row > label {
+    padding-top: 4px;
+    margin-bottom: 0px;
+    height: 25px;
+    line-height: 25px;
+}
+
+.form-group .form-check {
+    padding-top: 4px;
+}
+
+.col-md-1 .form-group:last-child,
+.col-md-2 .form-group:last-child,
+.col-md-3 .form-group:last-child,
+.col-md-4 .form-group:last-child,
+.col-md-5 .form-group:last-child,
+.col-md-6 .form-group:last-child,
+.col-md-7 .form-group:last-child,
+.col-md-8 .form-group:last-child,
+.col-md-9 .form-group:last-child,
+.col-md-10 .form-group:last-child,
+.col-md-11 .form-group:last-child,
+.col-md-12 .form-group:last-child {
+    margin-bottom: 0px;
+}
+
+/* jsgrid css */
+td.jsgrid-edit input {
+    border-radius: 4px;
+    border: 1px solid #eee;
+    padding: 2px;
+    font-size: 13px;
+}
+
+.custom-label:after {
+    padding: .15rem .5rem;
+    height: 1.8125rem;
+}
